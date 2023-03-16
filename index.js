@@ -16,11 +16,11 @@ const mySchema = new mongoose.Schema({
 const MyModel = mongoose.model('MyModel', mySchema);
 
 
-// // Create
-// const newData = new MyModel({ name: 'John', age: 30, email: 'john@example.com' });
-// newData.save()
-//   .then((savedData) => console.log('Dữ liệu được lưu vào MongoDB: ', savedData))
-//   .catch((err) => console.log('Lỗi lưu dữ liệu vào MongoDB: ', err));
+// Create
+const newData = new MyModel({ name: 'John', age: 30, email: 'john@example.com' });
+newData.save()
+  .then((savedData) => console.log('Dữ liệu được lưu vào MongoDB: ', savedData))
+  .catch((err) => console.log('Lỗi lưu dữ liệu vào MongoDB: ', err));
 
 
 // // Read
