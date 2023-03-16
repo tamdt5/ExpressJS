@@ -16,11 +16,12 @@ const mySchema = new mongoose.Schema({
 const MyModel = mongoose.model('MyModel', mySchema);
 
 
-// // Create
-// const newData = new MyModel({ name: 'John', age: 30, email: 'john@example.com' });
-// newData.save()
-//   .then((savedData) => console.log('Dữ liệu được lưu vào MongoDB: ', savedData))
-//   .catch((err) => console.log('Lỗi lưu dữ liệu vào MongoDB: ', err));
+// Create
+const newData = new MyModel({ name: 'John', age: 30, email: 'john@example.com' });
+newData.save()
+  .then((savedData) => console.log('Dữ liệu được lưu vào MongoDB: ', savedData))
+  .catch((err) => console.log('Lỗi lưu dữ liệu vào MongoDB: ', err));
+  mongoose.connection.close()
 
 
 // // Read
@@ -41,3 +42,4 @@ const MyModel = mongoose.model('MyModel', mySchema);
 // People.deleteMany({ status: "D" })
 //   .then((result) => console.log('Đã xóa tất cả các documents có trường "status" có giá trị là "D"'))
 //   .catch((err) => console.log('Lỗi xóa documents: ', err));
+
