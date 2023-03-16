@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Kết nối MongoDB với mongoose
-mongoose.connect('mongodb+srv://thanhtamdang103:Tamvip12VjpVlzluonatroioilatroi@cluster0.rmnl5s8.mongodb.net/test', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://thanhtamdang103:admin123@cluster0.rmnl5s8.mongodb.net/test', { useNewUrlParser: true })
   .then(() => console.log('Kết nối MongoDB thành công'))
   .catch((err) => console.log('Lỗi kết nối MongoDB: ', err));
 
