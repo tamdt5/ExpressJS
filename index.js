@@ -19,7 +19,6 @@ const MyModel = mongoose.model('MyModel', mySchema);
 // Create
 const newData = new MyModel({ name: 'John', age: 30, email: 'john@example.com' });
 newData.save()
-<<<<<<< HEAD
   .then((savedData) => 
   {
     console.log('Dữ liệu được lưu vào MongoDB: ', savedData)
@@ -29,11 +28,9 @@ newData.save()
     console.log('Lỗi lưu dữ liệu vào MongoDB: ', err)
     mongoose.connection.close()
   });
-=======
   .then((savedData) => console.log('Dữ liệu được lưu vào MongoDB: ', savedData))
   .catch((err) => console.log('Lỗi lưu dữ liệu vào MongoDB: ', err));
   mongoose.connection.close() 
->>>>>>> da5700a4a568eb0179217c848f4209218ef284d8
 
 
 // // Read
