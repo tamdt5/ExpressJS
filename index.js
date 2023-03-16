@@ -28,10 +28,6 @@ newData.save()
     console.log('Lỗi lưu dữ liệu vào MongoDB: ', err)
     mongoose.connection.close()
   });
-  .then((savedData) => console.log('Dữ liệu được lưu vào MongoDB: ', savedData))
-  .catch((err) => console.log('Lỗi lưu dữ liệu vào MongoDB: ', err));
-  mongoose.connection.close() 
-
 
 // // Read
 // MyModel.find({})
